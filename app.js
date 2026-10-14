@@ -19,7 +19,7 @@ inv:[["Large Brown Bags","boxes",24,8,1,0],["Small Brown Bags #4","boxes",24,6,1
 ["Plastic Roti Bags","packs",24,6,2,1],["Garbage Bags","cases",24,2,1,0],["Paper Towels","rolls",24,24,8,1],["Wipes","packs",24,8,2,1],["Clear Plastic Bags","bags",24,400,100,0],["Toilet Paper","rolls",24,20,6,1],["Hand Soap","bottles",24,5,2,0]],
 weeks:0,checked:{},hours:{"Sample Volunteer A":12,"Sample Volunteer B":8,"Sample Volunteer C":4.5,"Sample Volunteer D":6},
 pending:[{n:"Sample Student E",h:4,w:"School hours · Street handout"},{n:"Sample Student F",h:3.5,w:"School hours · Packing"}],
-admins:{"Aslam (Owner)":true,"Anila":true,"Amyna":true,"Noushin":true,"Sample Volunteer A":false},vsent:{},prog:"All",
+admins:{"Aslam (Owner)":true,"Anila":true,"Amyna":true,"Naosheen":true,"Sample Volunteer A":false},vsent:{},prog:"All",
 rv:6,routes:[{d:"Volunteer A",area:"Carrollton · 59 homes, 61 meals",stops:["Seniors · Carrollton"]},{d:"Volunteer B",area:"Dallas · shelters, street handout + 3 senior homes",stops:["The Bridge North Texas","Austin Street Center","Street handout","Seniors · Dallas 75287"]},{d:"Volunteer C",area:"West & north · 35 homes, 77 meals",stops:["Seniors · Euless & Irving","Seniors · Coppell & Lewisville","Seniors · Plano & Allen"]}]}}
 let S=Object.assign(fresh(),JSON.parse(localStorage.getItem("maasOps")||"null")||{});if(!S.admins["Aslam (Owner)"]){const f=fresh();S.admins=f.admins;S.routes=f.routes}if(S.rv!==6){const f=fresh();S.routes=f.routes;S.rv=6}const save=()=>localStorage.setItem("maasOps",JSON.stringify(S));
 const $=id=>document.getElementById(id),esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
